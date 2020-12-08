@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-08T10:14:46.486Z" agent="5.0 (X11)" etag="aEAKbyAFdlzmbgDvrEpx" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-08T10:14:59.774Z" agent="5.0 (X11)" etag="j8YrsRhjZfxAMWCxrEv7" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="3268" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -681,8 +681,8 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-271" value="input = conv_output" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="65" y="310" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-277" value="&lt;div&gt;mel_outputs = &lt;br&gt;&lt;/div&gt;&lt;div&gt;decoder_output + projected_residual&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="1270" y="1870" width="290" height="60" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-277" value="&lt;div&gt;mel_outputs = &lt;br&gt;&lt;/div&gt;&lt;div&gt;decoder_output + projected_residual&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#e1d5e7;fontSize=16;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="1880" width="290" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-283" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-279" target="5ah7Fh8-n24Y0VrOONyn-282">
           <mxGeometry relative="1" as="geometry" />
