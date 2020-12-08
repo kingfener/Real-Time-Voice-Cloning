@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-08T10:06:24.185Z" agent="5.0 (X11)" etag="n9N1C98W34rLq_SvSfIk" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-08T10:07:11.674Z" agent="5.0 (X11)" etag="wxeeSHJjzxQZKyp-uHii" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="3268" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -294,13 +294,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-140" value="embedded_inputs = tf.nn.embedding_lookup(self.embedding_table, tower_inputs[i])" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="-400" y="-50" width="440" height="50" as="geometry" />
+          <mxGeometry x="-375" y="-60" width="440" height="50" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-141" target="5ah7Fh8-n24Y0VrOONyn-140">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-141" value="tower_inputs" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
-          <mxGeometry x="-250" y="-130" width="140" height="40" as="geometry" />
+          <mxGeometry x="-225" y="-140" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-3" value="TacotronEncoderCell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="-225" y="70" width="140" height="60" as="geometry" />
@@ -311,13 +311,12 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-145" value="&lt;div&gt;tower_input_lengths=length&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;fillColor=#ffff88;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="-480" y="145" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-192" target="5ah7Fh8-n24Y0VrOONyn-137">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-148" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-192" target="5ah7Fh8-n24Y0VrOONyn-137">
           <mxGeometry relative="1" as="geometry">
             <mxPoint y="530" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="-285" y="700" />
-              <mxPoint x="-210" y="700" />
-              <mxPoint x="-210" y="820" />
+              <mxPoint x="-290" y="640" />
+              <mxPoint x="-290" y="850" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -468,7 +467,7 @@
           <mxGeometry x="1270" y="1200" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-192" value="encoder_outputs" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="-345" y="600" width="120" height="60" as="geometry" />
+          <mxGeometry x="-322.5" y="580" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-201" value="&lt;div align=&quot;left&quot;&gt;&lt;ol&gt;&lt;li&gt;state_time+1&lt;br&gt;&lt;/li&gt;&lt;li&gt;next_cell_state&lt;br&gt;&lt;/li&gt;&lt;li&gt;context_vector&lt;/li&gt;&lt;li&gt;cummulated_alignments&lt;/li&gt;&lt;li&gt;alignments_history&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1150" y="1395" width="200" height="110" as="geometry" />
