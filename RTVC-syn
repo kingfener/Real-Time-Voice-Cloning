@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-08T09:20:35.146Z" agent="5.0 (X11)" etag="ZgQC58Z0j2_ZVk-9rZGp" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-08T09:30:29.459Z" agent="5.0 (X11)" etag="FUOpKao-RYK8ruasfUHl" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="2923" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -256,38 +256,6 @@
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-108" value="_compute_attention()" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=1;shadow=1;glass=1;" vertex="1" parent="1">
           <mxGeometry x="1842.5" y="680" width="230" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-114" target="5ah7Fh8-n24Y0VrOONyn-116">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-114" value="expended_alis = [BS,1,mem_size]" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2015" y="1238" width="270" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-115" target="5ah7Fh8-n24Y0VrOONyn-116">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-115" value="LSA.values" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2095" y="1078" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-116" value="A*B=context" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2345" y="1148" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-130" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-125">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2705" y="1118" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-125" value="locations_layestf.Dense(128)" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2530" y="988" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-128" value="&lt;div&gt;processed_query = self.query(query)&lt;/div&gt;&lt;div&gt;processed_query = tf.expend_dims(1)==[BS,1,attention-dim]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;previus_ali = state &lt;br&gt;expended_ali = tf.expand_dim(previus_ali,axis=2)&lt;/div&gt;&lt;div&gt;f =location_conv(expendes_ali)&lt;br&gt;&lt;/div&gt;&lt;div&gt;processed_location_feat = location_layer(f)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2520" y="1118" width="380" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-133" value="&lt;div&gt;energy = _location_sensitive_score(processed_query, processed_location_features, self.keys)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;energy = dot(v_a, tanh(W_keys(h_enc) + W_query(h_dec) + W_fil(f) + b_a))" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="2560" y="1308" width="300" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-134" value="&lt;div&gt;next_state = alignments&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;# alignments shape = energy shape = [batch_size, max_time]&lt;/div&gt;&lt;div&gt;alignments = self._probability_fn(energy, previous_alignments)&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" vertex="1" parent="1">
-          <mxGeometry x="2500" y="1538" width="390" height="150" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-137" target="5ah7Fh8-n24Y0VrOONyn-165">
           <mxGeometry relative="1" as="geometry">
@@ -575,11 +543,20 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-232" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-230" target="5ah7Fh8-n24Y0VrOONyn-231">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-230" target="5ah7Fh8-n24Y0VrOONyn-240">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-241" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-230" target="5ah7Fh8-n24Y0VrOONyn-240">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2944" y="570" />
-              <mxPoint x="2944" y="1325" />
+              <mxPoint x="2944" y="1373" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-248" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-230" target="5ah7Fh8-n24Y0VrOONyn-244">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3310" y="1420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2920" y="570" />
+              <mxPoint x="2920" y="1540" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -595,6 +572,14 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-235" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-233" target="5ah7Fh8-n24Y0VrOONyn-234">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-252" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;gradientColor=#ffa500;fillColor=#ffcd28;strokeColor=#d79b00;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-233" target="5ah7Fh8-n24Y0VrOONyn-251">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3610" y="850" />
+              <mxPoint x="3610" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-233" value="&lt;div&gt;f = &lt;br&gt;&lt;/div&gt;&lt;div&gt;self.location_convolution(expanded_alignments)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="2964" y="820" width="450" height="60" as="geometry" />
         </mxCell>
@@ -606,20 +591,35 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;gradientColor=#ffa500;fillColor=#ffcd28;strokeColor=#d79b00;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-234" target="5ah7Fh8-n24Y0VrOONyn-253">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-234" value="&lt;div&gt;processed_location_features &lt;br&gt;&lt;/div&gt;&lt;div&gt;= self.location_layer(f)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="3009" y="940" width="360" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-242" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-237" target="5ah7Fh8-n24Y0VrOONyn-240">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-237" value="&lt;div&gt;energy =&lt;/div&gt;&lt;div&gt; _location_sensitive_score&lt;/div&gt;&lt;div&gt;(processed_query, processed_location_features, self.keys)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="3134" y="1100" width="350" height="120" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-250" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;gradientColor=#ffa500;fillColor=#ffcd28;strokeColor=#d79b00;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-237" target="5ah7Fh8-n24Y0VrOONyn-249">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-240" value="&lt;div&gt;alignments = &lt;br&gt;&lt;/div&gt;&lt;div&gt;self._probability_fn&lt;/div&gt;&lt;div&gt;(energy, previous_alignments)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="3164" y="1308" width="290" height="68" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-237" value="&lt;div&gt;energy =&lt;/div&gt;&lt;div&gt; _location_sensitive_score&lt;/div&gt;&lt;div&gt;(processed_query, processed_location_features, self.keys)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;energy = dot(v_a, tanh(W_keys(h_enc) + W_query(h_dec) + W_fil(f) + b_a))&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3134" y="1080" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-240" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;#alignments shape = energy shape = [batch_size, max_time]&lt;/div&gt;&lt;div&gt;alignments = &lt;br&gt;&lt;/div&gt;&lt;div&gt;self._probability_fn&lt;/div&gt;&lt;div&gt;(energy, previous_alignments)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;gradientColor=#ffd966;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3112" y="1300" width="394" height="150" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-244" value="&lt;div&gt;next_state = &lt;br&gt;&lt;/div&gt;&lt;div&gt;alignments + previous_alignments&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;gradientColor=#ea6b66;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="3204" y="1440" width="240" height="60" as="geometry" />
+          <mxGeometry x="3174" y="1510" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-249" value="tf.reduce_sum(v_a * tf.tanh(W_keys + W_query + W_fil + b_a), [2])" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3630" y="1120" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-251" value="&lt;div&gt;self.location_convolution =&lt;/div&gt;&lt;div&gt; tf.compat.v1.layers.Conv1D&lt;/div&gt;&lt;div&gt;(filters=hparams.attention_filters,&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; kernel_size=hparams.attention_kernel, &lt;br&gt;&lt;/div&gt;&lt;div&gt;padding=&quot;same&quot;, use_bias=True,&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; bias_initializer=tf.zeros_initializer(), &lt;br&gt;&lt;/div&gt;&lt;div&gt;name=&quot;location_features_convolution&quot;)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3730" y="580" width="350" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-253" value="&lt;div&gt;self.location_layer =&lt;/div&gt;&lt;div&gt; tf.compat.v1.layers.Dense&lt;/div&gt;&lt;div&gt;(units=num_units, &lt;br&gt;&lt;/div&gt;&lt;div&gt;use_bias=False,&lt;/div&gt;&lt;div&gt;dtype=tf.float32, name=&quot;location_features_layer&quot;)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="3700" y="896" width="340" height="148" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
