@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-08T10:14:59.774Z" agent="5.0 (X11)" etag="j8YrsRhjZfxAMWCxrEv7" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T03:39:16.809Z" agent="5.0 (X11)" etag="p9urkaLcz-YwWdZcOLjo" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
-    <mxGraphModel dx="3268" dy="2432" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,8 +10,8 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-142" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-3" target="5ah7Fh8-n24Y0VrOONyn-6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-40" y="100" />
-              <mxPoint x="-40" y="90" />
+              <mxPoint x="-60" y="90" />
+              <mxPoint x="-60" y="90" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -46,9 +46,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="60" y="230" />
-              <mxPoint x="-40" y="230" />
-              <mxPoint x="-40" y="200" />
-              <mxPoint x="-262" y="200" />
+              <mxPoint x="-263" y="230" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -117,25 +115,25 @@
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-268" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-25">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-262" y="325" as="targetPoint" />
+            <mxPoint x="-262" y="355" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-25" value="&lt;div&gt;_fw_cell=zoneoutLSTMCell()&lt;/div&gt;&lt;div&gt;_bw_cell = ZoneoutLSTMCell&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="-405" y="240" width="285" height="60" as="geometry" />
+          <mxGeometry x="-405" y="270" width="285" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-27" target="5ah7Fh8-n24Y0VrOONyn-28">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="-262.5" y="422" as="sourcePoint" />
+            <mxPoint x="-262.5" y="452" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-27" value="&lt;div&gt;outputs, (fw_state, bw_state) = tf.compat.v1.nn.bidirectional_dynamic_rnn(&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="-410" y="330" width="295" height="60" as="geometry" />
+          <mxGeometry x="-410" y="360" width="295" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-269" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-28" target="5ah7Fh8-n24Y0VrOONyn-192">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-28" value="tf.concat(outputs,axis=2)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="-370" y="410" width="215" height="60" as="geometry" />
+          <mxGeometry x="-370" y="440" width="215" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-267" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-33" target="5ah7Fh8-n24Y0VrOONyn-258">
           <mxGeometry relative="1" as="geometry" />
@@ -304,7 +302,7 @@
           <mxGeometry x="-225" y="-140" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-3" value="TacotronEncoderCell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-225" y="70" width="140" height="60" as="geometry" />
+          <mxGeometry x="-225" y="60" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-276" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-145" target="5ah7Fh8-n24Y0VrOONyn-7">
           <mxGeometry relative="1" as="geometry" />
@@ -739,6 +737,83 @@
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-292" value="&lt;div&gt;(frames_prediction, stop_token_prediction,_),final_decoder_state, _ =&lt;/div&gt;&lt;div&gt; dynamic_decode(&lt;/div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; CustomDecoder(decoder_cell, self.helper, decoder_init_state)" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="-147.5" y="1440" width="630" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-294" value="&lt;ul&gt;&lt;li&gt;备注：此图时 RTVC-synthesizer的代码流程图&lt;br&gt;&lt;/li&gt;&lt;li&gt;-----》黄色箭头 表示代码的展开。&lt;br&gt;&lt;/li&gt;&lt;li&gt;同一色块表示同步输入或者相等&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="472.5" y="-260" width="405" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-295" value="data-shape" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;perimeterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="-955" y="395" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-296" value="tower_inputs : [[batch_size, -1],] =&amp;nbsp; [[batch_size, 批内的id长度],]" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1150" y="690" width="590" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-297" value="# tower_mel_targets: [[batch_size, -1, mel_channels],]= [[batch_size, 批内的 音频的帧数,mel_channels=80]，] " style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="810" width="670" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-298" value="tower_stop_token_targets ：[[batch_size, -1],] = [[batch_size, 批内的音频的帧数],]" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1180" y="910" width="650" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-299" value="embedded_inputs =tower_inputs[i] : [batch_size, -1] = [batch_size, 批内的id长度]" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="1010" width="610" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-300" value="Encoder Cell ==&amp;gt; [batch_size, encoder_steps, encoder_lstm_units] = [BS,encoder_steps,256]" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1100" y="1130" width="520" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-301" value="# tower_input_lengths [[BS,batch内的id长度],]" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="1230" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-302" value="# tower_targets_lengths =&amp;nbsp; [[BS,batch内的mel帧数],]" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1050" y="1300" width="430" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-317" value="Classname" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=1;glass=1;strokeWidth=1;fontSize=19;spacing=5;" vertex="1" parent="1">
+          <mxGeometry x="-2050" y="924" width="860" height="1240" as="geometry">
+            <mxRectangle x="-1360" y="1250" width="110" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-318" value="inout:    [BS,T_in]，  BS=batch_size, T_in=输入的id数目， value = char" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="26" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-319" value="input_lenght: [BS] , value = 输入序列的长度" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="52" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-320" value="embed_targets ：[BS,E], E=speakerembbed-dim=256," style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="78" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-322" value="mel_targets : [BS,T_out,M], T_out=输出的音频的帧数， M=num_mels=80，values=mel的谱值" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="104" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-321" value="tower_XXX : 是 XXX在 多 GPU训练时，将 每个BS分配到 多个GPU上。" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;fontStyle=1" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="130" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-329" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="156" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-330" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="182" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-331" value="            self._placeholders = [&#xa;                tf.compat.v1.placeholder(tf.int32, shape=(None, None), name=&quot;inputs&quot;),&#xa;                tf.compat.v1.placeholder(tf.int32, shape=(None, ), name=&quot;input_lengths&quot;),&#xa;                tf.compat.v1.placeholder(tf.float32, shape=(None, None, hparams.num_mels), name=&quot;mel_targets&quot;),&#xa;                tf.compat.v1.placeholder(tf.float32, shape=(None, None), name=&quot;token_targets&quot;),&#xa;                tf.compat.v1.placeholder(tf.int32, shape=(None, ), name=&quot;targets_lengths&quot;),&#xa;                tf.compat.v1.placeholder(tf.int32, shape=(hparams.tacotron_num_gpus, None), name=&quot;split_infos&quot;),&#xa;                # SV2TTS&#xa;                tf.compat.v1.placeholder(tf.float32, shape=(None, hparams.speaker_embedding_size), name=&quot;speaker_embeddings&quot;)&#xa;            ]&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="208" width="860" height="202" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-332" value="split_infos.append([input_max_len, mel_target_max_len, token_target_max_len])" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="410" width="860" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-333" value="        # 备注： 输出变量，如 inputs , 行的维度是单个gpu训练的样本个数，列是 GPU个数倍， 总列数=num_GPU*单个样本列数。&#xa;        # inputs : 是 BS/num_GPU行个样本，在列上 num_GPU次。&#xa;        # mel_targets ：&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="436" width="860" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-346" value="size_per_device = int(len(batches) / self._hparams.tacotron_num_gpus)&#xa;_batches_per_group = 64&#xa;&#xa;# batch_size 必须时GPU个数的整数倍。&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="570" width="860" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-348" value="_prepare_inputs(self, inputs):&#xa;# 行上进行排列，作为单个 gpu上训练的一组数据。&#xa;        return np.stack([self._pad_input(x, max_len) for x in inputs]), max_len&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="704" width="860" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-351" value="&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="838" width="860" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-352" value="&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="972" width="860" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-353" value="&#xa;&#xa;&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+          <mxGeometry y="1106" width="860" height="134" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
