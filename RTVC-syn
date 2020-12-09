@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T09:52:10.399Z" agent="5.0 (X11)" etag="gG1CWUy6fFcccEuDbVp9" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T09:54:28.955Z" agent="5.0 (X11)" etag="cMAtk53zbl2a2cvHPUeN" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4623" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1095,6 +1095,12 @@
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-424" value="Seq2Seq模型训练：&lt;br&gt;Encoder：input_sequences ----&amp;gt; (RNN) ----&amp;gt; C(Cell State)&lt;br&gt;Decoder：C + 结合时刻i的target ----&amp;gt; (RNN) ----&amp;gt; 预测时刻i+1的target&lt;br&gt;重点：训练过程decoder部分的输入是target&lt;br&gt;预测过程区别：decoder的输入是上一时刻的输出&lt;br&gt;&lt;br&gt;作者：fada_away&lt;br&gt;链接：https://www.jianshu.com/p/25f0b0cab45f&lt;br&gt;来源：简书&lt;br&gt;著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="635" y="3175" width="850" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-427" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=17;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-426" target="5ah7Fh8-n24Y0VrOONyn-405">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-426" value="(cell_outputs, stop_token), cell_state" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#d80073;fontSize=14;strokeColor=#A50040;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="3260" width="200" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
