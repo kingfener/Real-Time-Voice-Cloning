@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T09:54:28.955Z" agent="5.0 (X11)" etag="cMAtk53zbl2a2cvHPUeN" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T09:57:36.033Z" agent="5.0 (X11)" etag="PJfnZ7UL19r7oMIP_Ibs" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4623" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -971,7 +971,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-373" value="&lt;div&gt;(finished, next_inputs, next_state) = self._helper.next_inputs(&lt;/div&gt;&lt;div&gt;time=time,&lt;/div&gt;&lt;div&gt;outputs=cell_outputs,[有标签学习，未使用]&lt;/div&gt;&lt;div&gt;state=cell_state,&lt;/div&gt;&lt;div&gt;sample_ids=sample_ids,&lt;br&gt;&lt;/div&gt;&lt;div&gt;stop_token_prediction=stop_token)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-373" value="&lt;div&gt;(finished, next_inputs, next_state) = self._helper.next_inputs(&lt;/div&gt;&lt;div&gt;time=time,&lt;/div&gt;&lt;div&gt;outputs=cell_outputs,[有标签学习，未使用]&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 19px&quot;&gt;state=cell_state,&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;sample_ids=sample_ids,&lt;br&gt;&lt;/div&gt;&lt;div&gt;stop_token_prediction=stop_token)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-455" y="1255" width="300" height="160" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-383" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-375" target="5ah7Fh8-n24Y0VrOONyn-377">
