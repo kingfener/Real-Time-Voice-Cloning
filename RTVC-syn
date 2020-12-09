@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T08:29:54.997Z" agent="5.0 (X11)" etag="mZYErWnofbhvuDenPC1C" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T08:41:10.794Z" agent="5.0 (X11)" etag="RNtkH09ZZD6GvImZ6ClQ" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
-    <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4623" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,10 +15,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-4" target="5ah7Fh8-n24Y0VrOONyn-137">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-4" target="5ah7Fh8-n24Y0VrOONyn-137">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-140" y="800" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-175" y="540" />
+              <mxPoint x="-175" y="800" />
+              <mxPoint x="-178" y="800" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -832,8 +835,8 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-292" target="5ah7Fh8-n24Y0VrOONyn-280">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-292" value="&lt;div&gt;(frames_prediction, stop_token_prediction,_),final_decoder_state, _ =&lt;/div&gt;&lt;div&gt; dynamic_decode(&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; CustomDecoder(decoder_cell, self.helper, decoder_init_state)&lt;/div&gt;&lt;div&gt;这个函数主要的一个思想是一步一步地调用Decoder的step函数，实现最后的一句话的生成&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="108.75" y="1395" width="392.5" height="190" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-292" value="&lt;div&gt;(frames_prediction, stop_token_prediction,_),final_decoder_state, _ =&lt;/div&gt;&lt;div&gt; dynamic_decode(&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; CustomDecoder(decoder_cell, self.helper, decoder_init_state,&lt;/div&gt;&lt;div&gt;max_iters=2000,&amp;nbsp; ##&amp;nbsp;&amp;nbsp; 决定了最长输出的帧数。)&lt;/div&gt;&lt;div&gt;这个函数主要的一个思想是一步一步地调用Decoder的step函数，实现最后的一句话的生成&lt;/div&gt;&lt;div&gt;ref:https://blog.csdn.net/tudaodiaozhale/article/details/90737077&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="108.75" y="1395" width="392.5" height="205" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-294" value="&lt;ul&gt;&lt;li&gt;备注：此图时 RTVC-synthesizer的代码流程图&lt;br&gt;&lt;/li&gt;&lt;li&gt;-----》黄色箭头 表示代码的展开。&lt;br&gt;&lt;/li&gt;&lt;li&gt;同一色块表示同步输入或者相等&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="472.5" y="-260" width="405" height="80" as="geometry" />
