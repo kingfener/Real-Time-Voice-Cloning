@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T08:06:48.813Z" agent="5.0 (X11)" etag="Tzk6dLYb6XEltO09blgO" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T08:22:32.167Z" agent="5.0 (X11)" etag="Xo50-WrESGcy6nQOrd_L" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -178,13 +178,12 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-372" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-46" target="5ah7Fh8-n24Y0VrOONyn-371">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-385" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;shape=flexArrow;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-46" target="5ah7Fh8-n24Y0VrOONyn-396">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-385" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;shape=flexArrow;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-46" target="5ah7Fh8-n24Y0VrOONyn-396">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-20" y="1330" as="targetPoint" />
             <Array as="points">
               <mxPoint x="-245" y="1080" />
-              <mxPoint x="-90" y="1080" />
-              <mxPoint x="-90" y="1330" />
+              <mxPoint y="1080" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -785,7 +784,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-280" value="frames_prediction" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1590" width="230" height="40" as="geometry" />
+          <mxGeometry x="340" y="1620" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-286" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-282" target="5ah7Fh8-n24Y0VrOONyn-284">
           <mxGeometry relative="1" as="geometry">
@@ -819,8 +818,8 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-293" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-292" target="5ah7Fh8-n24Y0VrOONyn-280">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-292" value="&lt;div&gt;(frames_prediction, stop_token_prediction,_),final_decoder_state, _ =&lt;/div&gt;&lt;div&gt; dynamic_decode(&lt;/div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; CustomDecoder(decoder_cell, self.helper, decoder_init_state)" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="90" y="1440" width="392.5" height="100" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-292" value="&lt;div&gt;(frames_prediction, stop_token_prediction,_),final_decoder_state, _ =&lt;/div&gt;&lt;div&gt; dynamic_decode(&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; CustomDecoder(decoder_cell, self.helper, decoder_init_state)&lt;/div&gt;&lt;div&gt;这个函数主要的一个思想是一步一步地调用Decoder的step函数，实现最后的一句话的生成&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=6;fillColor=#FFFFFF;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="108.75" y="1395" width="392.5" height="190" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-294" value="&lt;ul&gt;&lt;li&gt;备注：此图时 RTVC-synthesizer的代码流程图&lt;br&gt;&lt;/li&gt;&lt;li&gt;-----》黄色箭头 表示代码的展开。&lt;br&gt;&lt;/li&gt;&lt;li&gt;同一色块表示同步输入或者相等&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;shadow=1;glass=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="472.5" y="-260" width="405" height="80" as="geometry" />
@@ -968,12 +967,14 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-375" value="outputs = CustomDecoderOutput(cell_outputs, stop_token, sample_ids)" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="-285" y="1470" width="260" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.383;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-396" target="5ah7Fh8-n24Y0VrOONyn-377">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-384" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-396" target="5ah7Fh8-n24Y0VrOONyn-377">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="40" y="1360" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="40" y="1360" />
-              <mxPoint x="40" y="1585" />
+              <mxPoint x="20" y="1360" />
+              <mxPoint x="20" y="1610" />
+              <mxPoint x="-110" y="1610" />
+              <mxPoint x="-110" y="1600" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -1002,8 +1003,8 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-398" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-396" target="5ah7Fh8-n24Y0VrOONyn-397">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-396" value="CustomDecoder()-step()" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="-10" y="1300" width="120" height="60" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-396" value="&lt;div&gt;CustomDecoder()-step()&lt;/div&gt;&lt;div&gt;该函数接收当前的输入和隐层状态会生成下一个词&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="1300" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-397" target="5ah7Fh8-n24Y0VrOONyn-292">
           <mxGeometry relative="1" as="geometry" />
