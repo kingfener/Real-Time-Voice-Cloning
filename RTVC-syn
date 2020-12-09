@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T09:18:41.791Z" agent="5.0 (X11)" etag="My_XGWkalAU3BfqblScz" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T09:20:04.555Z" agent="5.0 (X11)" etag="RW-2cgsyecYHBKsV71QQ" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4623" dy="2241" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1032,13 +1032,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-403" value="&lt;div style=&quot;font-size: 17px;&quot;&gt;initial_finished, initial_inputs, initial_state = decoder.initialize()&lt;/div&gt;&lt;div style=&quot;font-size: 17px;&quot;&gt;一个是initial_finished，一般是[batch_size]的大小False值，表明当前解码步骤尚未结束（未生成到最后一个词&lt;br style=&quot;font-size: 17px;&quot;&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="-12.5" y="3360" width="612.5" height="120" as="geometry" />
+          <mxGeometry x="-15.53" y="3370" width="612.5" height="120" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-422" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-405" target="5ah7Fh8-n24Y0VrOONyn-403">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-405" value="decoder" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#ffe6cc;fontSize=17;strokeColor=#d79b00;" vertex="1" parent="1">
-          <mxGeometry x="233.75" y="3260" width="120" height="60" as="geometry" />
+          <mxGeometry x="230.72" y="3260" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-409" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;fontSize=17;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-406" target="5ah7Fh8-n24Y0VrOONyn-407">
           <mxGeometry relative="1" as="geometry" />
