@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T08:27:05.593Z" agent="5.0 (X11)" etag="BKow9Y6Xb5Q4IDLxHZIT" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T08:27:51.705Z" agent="5.0 (X11)" etag="t5Th9sPzol3Vyr8EbyAL" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1017,7 +1017,7 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-398" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-396" target="5ah7Fh8-n24Y0VrOONyn-397">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-396" value="&lt;div&gt;CustomDecoder()-step()&lt;/div&gt;&lt;div&gt;该函数接收当前的输入和隐层状态会生成下一个词&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-396" value="&lt;div&gt;CustomDecoder()-step()&lt;/div&gt;&lt;div&gt;该函数接收当前的输入和隐层状态会生成下一个词&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#6a00ff;fontSize=14;strokeColor=#3700CC;fontColor=#ffffff;" vertex="1" parent="1">
           <mxGeometry x="-100" y="1300" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-399" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-397" target="5ah7Fh8-n24Y0VrOONyn-292">
