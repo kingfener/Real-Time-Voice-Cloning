@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-09T03:50:19.352Z" agent="5.0 (X11)" etag="uagUTLzavDcvWZbB5wbt" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-09T05:08:59.436Z" agent="5.0 (X11)" etag="NFNnuBz0QIZ4U-zADwWA" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -797,7 +797,7 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-332" value="split_infos.append([input_max_len, mel_target_max_len, token_target_max_len])" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
           <mxGeometry y="610" width="860" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-351" value="_prepare_batch(self, batches, outputs_per_step):&#xa;&#xa;&#xa;        # 备注： 输出变量，如 inputs , 行的维度是单个gpu训练的样本个数，列是 GPU个数倍， 总列数=num_GPU*单个样本列数。&#xa;        # inputs : 是 BS/num_GPU行个样本，在列上 num_GPU次。&#xa;        # mel_targets ：&#xa;        &#xa;        return inputs, input_lengths, mel_targets, token_targets, targets_lengths, \&#xa;               split_infos, embed_targets&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-351" value="_prepare_batch(self, batches, outputs_per_step):&#xa;        # 备注： 输出变量，如 inputs , 行的维度是单个gpu训练的样本个数，列是 GPU个数倍， 总列数=num_GPU*单个样本列数。&#xa;        # inputs : 是 BS/num_GPU行个样本，在列上 num_GPU次。&#xa;        &#xa;        return inputs, input_lengths, mel_targets, token_targets, targets_lengths, \&#xa;               split_infos, embed_targets&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
           <mxGeometry y="636" width="860" height="232" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-348" value="_prepare_inputs(self, inputs):&#xa;# 行上进行排列，作为单个 gpu上训练的一组数据。&#xa;        return np.stack([self._pad_input(x, max_len) for x in inputs]), max_len&#xa;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;" vertex="1" parent="5ah7Fh8-n24Y0VrOONyn-317">
