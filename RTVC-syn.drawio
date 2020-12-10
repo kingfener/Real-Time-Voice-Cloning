@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T09:01:57.465Z" agent="5.0 (X11)" etag="Dst9LoLSw4tbmdrQEASE" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-10T09:15:30.222Z" agent="5.0 (X11)" etag="_7JEVmyNP4dKp2mtovKK" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
-    <mxGraphModel dx="3379" dy="1557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3759" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -868,7 +868,7 @@
           <mxGeometry x="-1050" y="1300" width="430" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-317" value="Classname" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;rounded=1;shadow=1;glass=1;strokeWidth=1;fontSize=19;spacing=5;" parent="1" vertex="1">
-          <mxGeometry x="-2050" y="924" width="860" height="1404" as="geometry">
+          <mxGeometry x="-2550" y="1410" width="860" height="1404" as="geometry">
             <mxRectangle x="-1360" y="1250" width="110" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -1107,16 +1107,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-1" value="&lt;div&gt;self._lengths = tf.tile([tf.shape(self._targets)[1]], [self._batch_size])&lt;/div&gt;&lt;div&gt;训练时，判断是否结束的长度，根据 outputs_per_step 对 目标值进行了抽取&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="-1700" y="120" width="550" height="110" as="geometry" />
+          <mxGeometry x="-1860" y="162.5" width="550" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-2" target="Q9d2teNGq6mOAfKT14Iu-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-2" value="TacoTrainingHelper" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#fff2cc;fontSize=17;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-1545" y="10" width="240" height="60" as="geometry" />
+          <mxGeometry x="-1705" y="52.5" width="240" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-4" value="&lt;div&gt;self._targets = targets[:, r-1::r, :]&lt;/div&gt;&lt;div&gt;以抽取后的mel 谱的时间步的mel帧作为训练时的参考 mel 帧值。&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="-1625" y="290" width="400" height="100" as="geometry" />
+          <mxGeometry x="-1785" y="305" width="400" height="100" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;shape=flexArrow;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-8" target="Q9d2teNGq6mOAfKT14Iu-9">
           <mxGeometry relative="1" as="geometry" />
@@ -1126,6 +1126,57 @@
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-9" value="&lt;div&gt;tacotron_teacher_forcing_ratio=1.,&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;# 可以更改该值小于1, 这样在训练的时候 会有一定的比例输入的参考值会 预测出的输出。&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="-2250" y="162.5" width="360" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-13" target="Q9d2teNGq6mOAfKT14Iu-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-13" value="&lt;div&gt;before = tf.compat.v1.losses.mean_squared_error(&lt;/div&gt;&lt;div&gt;self.tower_mel_targets[i],self.tower_decoder_output[i])&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1830" y="499" width="490" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-14" target="Q9d2teNGq6mOAfKT14Iu-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-14" value="loss = before + after + stop_token_loss + regularization + linear_loss" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1870" y="589" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-15" target="Q9d2teNGq6mOAfKT14Iu-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-15" value="self.tower_loss.append(loss)" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1715" y="677" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-16" target="Q9d2teNGq6mOAfKT14Iu-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-16" value="&lt;div&gt;gradients &lt;br&gt;&lt;/div&gt;&lt;div&gt;= optimizer.compute_gradients(self.tower_loss[i])&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;tower_gradients.append(gradients)" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1835" y="760" width="500" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-17" target="Q9d2teNGq6mOAfKT14Iu-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-17" value="&lt;div&gt;self.gradients = avg_grads&lt;/div&gt;clipped_gradients = avg_grads" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1710" y="1070" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-18" target="Q9d2teNGq6mOAfKT14Iu-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-18" value="&lt;div&gt;for grad_and_vars in zip(*tower_gradients):&lt;/div&gt;&lt;div&gt;for g, _ in grad_and_vars:&lt;/div&gt;&lt;div&gt;expanded_g = tf.expand_dims(g, 0)&lt;br&gt;&lt;/div&gt;&lt;div&gt;grads.append(expanded_g)&lt;br&gt;&lt;/div&gt;&lt;div&gt;avg_grads.append(grad)&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1800" y="895" width="430" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-19" value="&lt;div&gt;self.optimize = optimizer.apply_gradients(&lt;/div&gt;&lt;div&gt;zip(clipped_gradients, vars),global_step=global_step)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1810" y="1180" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;shape=flexArrow;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-27" target="Q9d2teNGq6mOAfKT14Iu-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-27" value="&lt;div&gt;loss-grad-opt&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#f8cecc;fontSize=17;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1960" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-28" target="Q9d2teNGq6mOAfKT14Iu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-28" value="损失是按照一整句计算一次，然后SGD优化" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1712.5" y="420" width="255" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
