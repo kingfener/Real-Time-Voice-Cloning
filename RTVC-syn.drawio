@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T09:41:54.744Z" agent="5.0 (X11)" etag="JvkEp4po-eXtki3cZ76F" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-10T10:01:17.055Z" agent="5.0 (X11)" etag="DgY1XckrQ4ZoQhN4P5si" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -346,14 +346,16 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-275" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;" parent="1" source="5ah7Fh8-n24Y0VrOONyn-140" target="5ah7Fh8-n24Y0VrOONyn-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-140" value="embedded_inputs = tf.nn.embedding_lookup(self.embedding_table, tower_inputs[i])" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" parent="1" vertex="1">
-          <mxGeometry x="-375" y="-60" width="440" height="50" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-140" value="&lt;div&gt;embedded_inputs = tf.nn.embedding_lookup(&lt;/div&gt;&lt;div&gt;self.embedding_table, tower_inputs[i])&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;" parent="1" vertex="1">
+          <mxGeometry x="-312.5" y="-65" width="315" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5ah7Fh8-n24Y0VrOONyn-141" target="5ah7Fh8-n24Y0VrOONyn-140" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-143" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5ah7Fh8-n24Y0VrOONyn-141" target="5ah7Fh8-n24Y0VrOONyn-140" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-240" y="-80" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-141" value="tower_inputs" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;fillColor=#ffff88;strokeColor=#36393d;" parent="1" vertex="1">
-          <mxGeometry x="-225" y="-140" width="140" height="40" as="geometry" />
+          <mxGeometry x="-425" y="-180" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-3" value="TacotronEncoderCell" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-225" y="60" width="140" height="60" as="geometry" />
@@ -1176,7 +1178,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-27" value="&lt;div&gt;loss-grad-opt&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#f8cecc;fontSize=17;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="-1960" y="420" width="120" height="60" as="geometry" />
+          <mxGeometry x="-1970" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-28" target="Q9d2teNGq6mOAfKT14Iu-13">
           <mxGeometry relative="1" as="geometry" />
@@ -1192,6 +1194,12 @@
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-35" value="&lt;div&gt;fastspeech2的 loss 是按照：&lt;/div&gt;&lt;div&gt;整句。 并且也采用了 tacotron2的 postNet.&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="-2320" y="395" width="230" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-37" target="5ah7Fh8-n24Y0VrOONyn-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-37" value="&lt;div&gt;self.embedding_table = tf.compat.v1.get_variable(&lt;/div&gt;&lt;div&gt;&quot;inputs_embedding&quot;, &lt;br&gt;&lt;/div&gt;&lt;div&gt;[&lt;b&gt;len(symbols), hp.embedding_dim&lt;/b&gt;], dtype=tf.float32)&lt;/div&gt;&lt;div&gt;输入的 embbeding&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="-205" width="540" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
