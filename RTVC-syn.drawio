@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T09:33:38.872Z" agent="5.0 (X11)" etag="xfbQYY6AUrTWlg-hkqns" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-10T09:41:54.744Z" agent="5.0 (X11)" etag="JvkEp4po-eXtki3cZ76F" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1186,6 +1186,12 @@
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-31" value="&lt;div&gt;next_inputs = tf.cond(&lt;/div&gt;&lt;div&gt;tf.less(tf.random.uniform([], minval=0, maxval=1, dtype=tf.float32), self._ratio),&lt;/div&gt;&lt;div&gt;#Teacher-forcing: return true frame&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt;&amp;nbsp;lambda: self._targets[:, &lt;b&gt;time&lt;/b&gt;, :], &lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt; # _output_dim=hparams.&lt;b&gt;num_mels&lt;/b&gt;&amp;nbsp; # 80&lt;/div&gt;lambda: outputs[:,-self._output_dim:])" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
           <mxGeometry x="-1300" y="210" width="600" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;shape=link;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-35" target="Q9d2teNGq6mOAfKT14Iu-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-35" value="&lt;div&gt;fastspeech2的 loss 是按照：&lt;/div&gt;&lt;div&gt;整句。 并且也采用了 tacotron2的 postNet.&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-2320" y="395" width="230" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
