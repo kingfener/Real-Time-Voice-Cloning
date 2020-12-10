@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T09:15:41.955Z" agent="5.0 (X11)" etag="dgFOfEJLefyfbGwpFtl7" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-10T09:33:38.872Z" agent="5.0 (X11)" etag="xfbQYY6AUrTWlg-hkqns" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
-    <mxGraphModel dx="3759" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4257" dy="2040" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -843,8 +843,11 @@
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-294" value="&lt;ul&gt;&lt;li&gt;备注：此图时 RTVC-synthesizer的代码流程图&lt;br&gt;&lt;/li&gt;&lt;li&gt;-----》黄色箭头 表示代码的展开。&lt;br&gt;&lt;/li&gt;&lt;li&gt;同一色块表示同步输入或者相等&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;rounded=1;shadow=1;glass=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="472.5" y="-260" width="405" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="5ah7Fh8-n24Y0VrOONyn-295" value="data-shape" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;perimeterSpacing=1;" parent="1" vertex="1">
-          <mxGeometry x="-900" y="345" width="120" height="60" as="geometry" />
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-33" style="edgeStyle=orthogonalEdgeStyle;shape=flexArrow;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.53;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=17;" edge="1" parent="1" source="5ah7Fh8-n24Y0VrOONyn-295" target="5ah7Fh8-n24Y0VrOONyn-296">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5ah7Fh8-n24Y0VrOONyn-295" value="data-shape" style="rounded=0;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#fff2cc;fontSize=16;perimeterSpacing=1;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-895" y="570" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-296" value="tower_inputs : [[batch_size, -1],] =&amp;nbsp; [[batch_size, 批内的id长度],]" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-1150" y="690" width="590" height="60" as="geometry" />
@@ -918,7 +921,7 @@
           <mxGeometry x="1215" y="110" width="400" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-357" value="" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=14;" parent="1" vertex="1">
-          <mxGeometry x="-740" y="250" width="120" height="60" as="geometry" />
+          <mxGeometry x="-650" y="250" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5ah7Fh8-n24Y0VrOONyn-374" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" parent="1" source="5ah7Fh8-n24Y0VrOONyn-371" target="5ah7Fh8-n24Y0VrOONyn-373" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -1107,16 +1110,19 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-1" value="&lt;div&gt;self._lengths = tf.tile([tf.shape(self._targets)[1]], [self._batch_size])&lt;/div&gt;&lt;div&gt;训练时，判断是否结束的长度，根据 outputs_per_step 对 目标值进行了抽取&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="-1860" y="162.5" width="550" height="110" as="geometry" />
+          <mxGeometry x="-1860" y="90" width="550" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-2" target="Q9d2teNGq6mOAfKT14Iu-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-2" value="TacoTrainingHelper" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#fff2cc;fontSize=17;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-1705" y="52.5" width="240" height="60" as="geometry" />
+          <mxGeometry x="-1705" y="10" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q9d2teNGq6mOAfKT14Iu-4" value="&lt;div&gt;self._targets = targets[:, r-1::r, :]&lt;/div&gt;&lt;div&gt;以抽取后的mel 谱的时间步的mel帧作为训练时的参考 mel 帧值。&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
-          <mxGeometry x="-1785" y="305" width="400" height="100" as="geometry" />
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-4" target="Q9d2teNGq6mOAfKT14Iu-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-4" value="&lt;div&gt;self._targets = targets[:, r-1::r, :]&lt;/div&gt;&lt;div&gt;以抽取后的mel 谱的时间步的mel帧作为训练时的参考 mel 帧值。&lt;/div&gt;&lt;div&gt;备注： 当前无论&amp;nbsp; r 为何值， decoder在解码的时候只取上1帧的mel谱输入作为input.&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1787.5" y="230" width="405" height="140" as="geometry" />
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;shape=flexArrow;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-8" target="Q9d2teNGq6mOAfKT14Iu-9">
           <mxGeometry relative="1" as="geometry" />
@@ -1177,6 +1183,9 @@
         </mxCell>
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-28" value="损失是按照一整句计算一次，然后SGD优化" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#f8cecc;fontSize=17;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-1712.5" y="420" width="255" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-31" value="&lt;div&gt;next_inputs = tf.cond(&lt;/div&gt;&lt;div&gt;tf.less(tf.random.uniform([], minval=0, maxval=1, dtype=tf.float32), self._ratio),&lt;/div&gt;&lt;div&gt;#Teacher-forcing: return true frame&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt;&amp;nbsp;lambda: self._targets[:, &lt;b&gt;time&lt;/b&gt;, :], &lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px&quot;&gt; # _output_dim=hparams.&lt;b&gt;num_mels&lt;/b&gt;&amp;nbsp; # 80&lt;/div&gt;lambda: outputs[:,-self._output_dim:])" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="-1300" y="210" width="600" height="180" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
