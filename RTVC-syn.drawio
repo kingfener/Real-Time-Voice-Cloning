@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T09:15:30.222Z" agent="5.0 (X11)" etag="_7JEVmyNP4dKp2mtovKK" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-10T09:15:41.955Z" agent="5.0 (X11)" etag="dgFOfEJLefyfbGwpFtl7" version="13.10.9" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="syn">
     <mxGraphModel dx="3759" dy="1766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1175,7 +1175,7 @@
         <mxCell id="Q9d2teNGq6mOAfKT14Iu-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=17;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="Q9d2teNGq6mOAfKT14Iu-28" target="Q9d2teNGq6mOAfKT14Iu-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q9d2teNGq6mOAfKT14Iu-28" value="损失是按照一整句计算一次，然后SGD优化" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#FFFFFF;fontSize=17;" vertex="1" parent="1">
+        <mxCell id="Q9d2teNGq6mOAfKT14Iu-28" value="损失是按照一整句计算一次，然后SGD优化" style="whiteSpace=wrap;html=1;rounded=1;shadow=1;glass=1;strokeWidth=1;fillColor=#f8cecc;fontSize=17;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-1712.5" y="420" width="255" height="60" as="geometry" />
         </mxCell>
       </root>
